@@ -1,0 +1,6 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\repaired\67_Bug2750\01\Bug2750LLM.tla
+Semantic processing of module Bug2750LLM
+Linting of module Bug2750LLM

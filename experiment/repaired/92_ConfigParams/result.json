@@ -1,0 +1,20 @@
+{
+  "id": 92,
+  "level": "basic",
+  "origin": "manual repair",
+  "attempts": [
+    {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0,
+      "iteration": 1,
+      "origin": "manual repair"
+    }
+  ]
+}

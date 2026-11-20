@@ -1,0 +1,26 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed 4628415733197411673 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 26128] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\experiment\repaired-comparison\67_Bug2750\model_against_gold\Bug2750LLMAgainstBug2750.tla
+Parsing file C:\projects\tla\experiment\repaired-comparison\67_Bug2750\model_against_gold\Bug2750LLM.tla
+Parsing file C:\projects\tla\experiment\repaired-comparison\67_Bug2750\model_against_gold\Bug2750.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{ab166662-f043-4adb-9542-a519f3cf3e6e}\Temp\tlc-10632370078839082689\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{ab166662-f043-4adb-9542-a519f3cf3e6e}\Temp\tlc-10632370078839082689\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Bug2750LLM
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750
+Semantic processing of module Bug2750LLMAgainstBug2750
+Linting of module Bug2750LLM
+Linting of module Bug2750
+Linting of module Bug2750LLMAgainstBug2750
+Starting... (2026-11-18 09:28:17)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-18 09:28:18.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 5.4E-20
+2 states generated, 1 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 1.
+The average outdegree of the complete state graph is 0 (minimum is 0, the maximum 0 and the 95th percentile is 0).
+Finished in 00s at (2026-11-18 09:28:18)

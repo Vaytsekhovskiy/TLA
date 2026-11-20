@@ -1,0 +1,16 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\reverse\Bug2750AgainstBug2750Control.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\reverse\Bug2750.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-645209015655694404\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-645209015655694404\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\reverse\Bug2750Control.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750
+Semantic processing of module Bug2750Control
+Semantic processing of module Bug2750AgainstBug2750Control
+Linting of module Bug2750
+Linting of module Bug2750Control
+Linting of module Bug2750AgainstBug2750Control

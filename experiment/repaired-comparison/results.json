@@ -1,0 +1,337 @@
+{
+  "ConfigParams": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "variable_map": {
+      "x": "x",
+      "y": "y",
+      "z": "z",
+      "w": "w"
+    },
+    "model": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0,
+      "iteration": 1,
+      "origin": "manual repair"
+    },
+    "gold_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "model_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "graph": {
+      "initial": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "states": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "edges": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      }
+    }
+  },
+  "Test1623": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 6,
+        "distinct": 5,
+        "depth": 5
+      },
+      "tlc_exit": 0
+    },
+    "variable_map": {
+      "x": "x"
+    },
+    "model": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 6,
+        "distinct": 5,
+        "depth": 5
+      },
+      "tlc_exit": 0,
+      "iteration": 1,
+      "origin": "manual repair"
+    },
+    "gold_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 6,
+        "distinct": 5,
+        "depth": 5
+      },
+      "tlc_exit": 0
+    },
+    "model_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 6,
+        "distinct": 5,
+        "depth": 5
+      },
+      "tlc_exit": 0
+    },
+    "graph": {
+      "initial": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "states": {
+        "gold": 5,
+        "model": 5,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "edges": {
+        "gold": 5,
+        "model": 5,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      }
+    }
+  },
+  "Bug2750": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 97,
+        "distinct": 36,
+        "depth": 7
+      },
+      "tlc_exit": 0
+    },
+    "variable_map": {
+      "buffer": "buffer",
+      "waitP": "waitP",
+      "waitC": "waitC"
+    },
+    "model": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0,
+      "iteration": 1,
+      "origin": "manual repair"
+    },
+    "gold_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "model_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": false,
+      "metrics": null,
+      "tlc_exit": 13
+    },
+    "graph": {
+      "initial": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "states": {
+        "gold": 36,
+        "model": 1,
+        "gold_only": 35,
+        "model_only": 0,
+        "gold_only_example": [
+          "<<>>",
+          "{p1}",
+          "{c1, c2}"
+        ],
+        "model_only_example": null
+      },
+      "edges": {
+        "gold": 86,
+        "model": 1,
+        "gold_only": 86,
+        "model_only": 1,
+        "gold_only_example": [
+          [
+            "<<>>",
+            "{p1}",
+            "{c1, c2}"
+          ],
+          [
+            "<<p2>>",
+            "{p1}",
+            "{c1}"
+          ]
+        ],
+        "model_only_example": [
+          [
+            "<<>>",
+            "{}",
+            "{}"
+          ],
+          [
+            "<<>>",
+            "{}",
+            "{}"
+          ]
+        ]
+      }
+    }
+  },
+  "test10": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "variable_map": {
+      "x": "x"
+    },
+    "model": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0,
+      "iteration": 1,
+      "origin": "manual repair"
+    },
+    "gold_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "model_property": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    },
+    "graph": {
+      "initial": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "states": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      },
+      "edges": {
+        "gold": 1,
+        "model": 1,
+        "gold_only": 0,
+        "model_only": 0,
+        "gold_only_example": null,
+        "model_only_example": null
+      }
+    }
+  }
+}

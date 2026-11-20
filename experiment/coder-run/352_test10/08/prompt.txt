@@ -1,0 +1,555 @@
+Write a complete TLA+ module named test10LLM for the task below. Return only the module text. It must work with the supplied TLC configuration.
+
+Task description
+This module is a regression-style test specification for TLA+ function definitions, function application, tupled arguments, records, and function override via EXCEPT. It models a trivial one-variable state machine with boolean variable x, where Init sets x to TRUE and Next leaves x unchanged, but the substantive content is the invariant Inv, which checks many function-evaluation identities using TLC's Assert and Print operators. The specification exercises operator definitions with bound domains, tuple parameters, nested tuples, record-valued functions, anonymous function constructors, EXCEPT updates including use of @, and record field access; it does not state temporal liveness properties or fault assumptions.
+
+TLC configuration
+  INIT
+    Init
+  
+  NEXT
+    Next
+  
+  INVARIANT Inv
+
+Revise your previous attempt using the checker output. Return the complete revised module.
+
+Previous attempt
+---- MODULE test10LLM ----
+
+EXTENDS TLC, Integers
+
+VARIABLES x
+
+Init ==
+  x = TRUE
+
+Next ==
+  x = x
+
+Inv ==
+  /\ x = TRUE
+  /\ x = FALSE -> FALSE
+  /\ x = TRUE -> TRUE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+  /\ x = TRUE -> x = TRUE
+  /\ x = FALSE -> x = FALSE
+
+
+Latest SANY output
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\coder-run\352_test10\07\test10LLM.tla
+***Parse Error***
+Was expecting "==== or more Module body"
+Encountered "->" at line 15, column 16 and token "FALSE" 
+
+Residual stack trace follows:
+Module definition starting at line 1, column 1.
+
+
+Fatal errors while parsing TLA+ spec in file test10LLM.tla
+
+In module test10LLM
+
+Could not parse module test10LLM from file test10LLM.tla
+*** Errors: 1
+
+In module test10LLM
+
+Could not parse module test10LLM from file test10LLM.tla
+
+
+

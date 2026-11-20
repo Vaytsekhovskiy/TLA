@@ -1,0 +1,16 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed 7745249906946468394 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 24756] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\experiment\repaired\67_Bug2750\01\Bug2750LLM.tla
+Semantic processing of module Bug2750LLM
+Linting of module Bug2750LLM
+Starting... (2026-11-18 09:27:58)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-18 09:27:58.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 5.4E-20
+2 states generated, 1 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 1.
+The average outdegree of the complete state graph is 0 (minimum is 0, the maximum 0 and the 95th percentile is 0).
+Finished in 00s at (2026-11-18 09:27:58)

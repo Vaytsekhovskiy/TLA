@@ -1,0 +1,39 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\coder-run\239_Test1623\03\Test1623LLM.tla
+Semantic processing of module Test1623LLM
+Semantic errors:
+
+*** Errors: 6
+
+line 11, col 8 to line 11, col 8 of module Test1623LLM
+
+Could not find declaration or definition of symbol '>'.
+
+
+line 11, col 6 to line 11, col 10 of module Test1623LLM
+
+Couldn't resolve infix operator symbol `>'.
+
+
+line 12, col 12 to line 12, col 12 of module Test1623LLM
+
+Could not find declaration or definition of symbol '-'.
+
+
+line 12, col 10 to line 12, col 14 of module Test1623LLM
+
+Couldn't resolve infix operator symbol `-'.
+
+
+line 17, col 5 to line 17, col 6 of module Test1623LLM
+
+Could not find declaration or definition of symbol '>='.
+
+
+line 17, col 3 to line 17, col 8 of module Test1623LLM
+
+Couldn't resolve infix operator symbol `>='.
+
+

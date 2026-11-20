@@ -1,0 +1,8 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\repaired\239_Test1623\01\Test1623LLM.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{49bf4eaa-a832-4a61-a79f-7e6e04d4faa3}\Temp\tlc-9664596040483970179\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Semantic processing of module Naturals
+Semantic processing of module Test1623LLM
+Linting of module Test1623LLM

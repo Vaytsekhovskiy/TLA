@@ -1,0 +1,14 @@
+{
+  "id": 92,
+  "level": "basic",
+  "description": "declarative_claude",
+  "attempts": [
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 1
+    }
+  ]
+}

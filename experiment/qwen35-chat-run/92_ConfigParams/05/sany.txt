@@ -1,0 +1,26 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\qwen35-chat-run\92_ConfigParams\05\ConfigParamsLLM.tla
+***Parse Error***
+Was expecting "---- MODULE (beginning of module)"
+Encountered "<EOF>" at line 31, column 9 and token "" 
+
+Residual stack trace follows:
+Begin module starting at line 31, column 9.
+Module definition starting at line 31, column 9.
+
+
+Fatal errors while parsing TLA+ spec in file ConfigParamsLLM.tla
+
+In module ConfigParamsLLM
+
+Could not parse module ConfigParamsLLM from file ConfigParamsLLM.tla
+*** Errors: 1
+
+In module ConfigParamsLLM
+
+Could not parse module ConfigParamsLLM from file ConfigParamsLLM.tla
+
+
+

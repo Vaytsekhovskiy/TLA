@@ -1,0 +1,14 @@
+{
+  "model": "saiga:latest",
+  "created_at": "2026-11-17T11:43:33.030045Z",
+  "response": "```module ConfigParamsLLM\n\n(* Constants *)\nCONSTANTS\n  MyInt == 42\n  MyStr == \"hello\"\n  MyModelValue1 == Model1\n  MyModelValue2 == Model2\n  MySet == {1, 2, 3}\n\n(* Types *)\nONE_TYPE\n  MyType == TYPE\n\n(* Model Values *)\nCONSTANTS\n  Model1 == MyModelValue1\n  Model2 == MyModelValue2\n\n(* Variables *)\nVARIABLES\n  x, y, z, w\n\n(* Initial Predicate *)\nPRED Init ==\n  /\\ x = MyInt\n  /\\ y = MyStr\n  /\\ z = MyModelValue1\n  /\\ w = MySet\n\n(* Next Predicate *)\nPRED Next == \n  /\\ True\n\n(* Invariant *)\nPRED Inv ==\n  /\\ x = MyInt\n  /\\ y = MyStr\n  /\\ z = MyModelValue1\n  /\\ z /= MyModelValue2\n  /\\ w = MySet\n\nEND MODULE\n```",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 51581117900,
+  "load_duration": 23812669900,
+  "prompt_eval_count": 358,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 649167000,
+  "eval_count": 214,
+  "eval_duration": 27090800000
+}

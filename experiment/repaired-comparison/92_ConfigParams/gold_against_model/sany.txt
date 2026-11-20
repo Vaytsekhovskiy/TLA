@@ -1,0 +1,12 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\repaired-comparison\92_ConfigParams\gold_against_model\ConfigParamsAgainstConfigParamsLLM.tla
+Parsing file C:\projects\tla\experiment\repaired-comparison\92_ConfigParams\gold_against_model\ConfigParams.tla
+Parsing file C:\projects\tla\experiment\repaired-comparison\92_ConfigParams\gold_against_model\ConfigParamsLLM.tla
+Semantic processing of module ConfigParams
+Semantic processing of module ConfigParamsLLM
+Semantic processing of module ConfigParamsAgainstConfigParamsLLM
+Linting of module ConfigParams
+Linting of module ConfigParamsLLM
+Linting of module ConfigParamsAgainstConfigParamsLLM

@@ -1,0 +1,35 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed 6679526208572408590 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 31012] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\reverse\Test1623AgainstTest1623Control.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\reverse\Test1623.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-2649477884857903777\Integers.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-2649477884857903777\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\reverse\Test1623Control.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Test1623
+Semantic processing of module Test1623Control
+Semantic processing of module Test1623AgainstTest1623Control
+Linting of module Test1623
+Linting of module Test1623Control
+Linting of module Test1623AgainstTest1623Control
+Starting... (2026-11-20 13:06:48)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-20 13:06:48.
+Error: Action property line 5, col 36 to line 5, col 59 of module Test1623AgainstTest1623Control is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+x = 4
+
+State 2: <Next line 18, col 8 to line 18, col 26 of module Test1623>
+x = 3
+
+State 3: <Next line 18, col 8 to line 18, col 26 of module Test1623>
+x = 2
+
+State 4: <Next line 18, col 8 to line 18, col 26 of module Test1623>
+x = 1
+
+4 states generated, 4 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 4.
+Finished in 00s at (2026-11-20 13:06:48)

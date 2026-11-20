@@ -1,0 +1,16 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\tmp\report-template-review\controls\ConfigParams\reverse\ConfigParamsAgainstConfigParamsControl.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\ConfigParams\reverse\ConfigParams.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\ConfigParams\reverse\ConfigParamsControl.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{f09d5841-b558-4398-947b-3d2991320987}\Temp\tlc-13979849354445652586\Integers.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{f09d5841-b558-4398-947b-3d2991320987}\Temp\tlc-13979849354445652586\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Semantic processing of module ConfigParams
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module ConfigParamsControl
+Semantic processing of module ConfigParamsAgainstConfigParamsControl
+Linting of module ConfigParams
+Linting of module ConfigParamsControl
+Linting of module ConfigParamsAgainstConfigParamsControl

@@ -1,0 +1,6 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\repaired\92_ConfigParams\01\ConfigParamsLLM.tla
+Semantic processing of module ConfigParamsLLM
+Linting of module ConfigParamsLLM

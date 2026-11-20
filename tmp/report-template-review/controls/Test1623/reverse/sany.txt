@@ -1,0 +1,16 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\reverse\Test1623AgainstTest1623Control.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\reverse\Test1623.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-11379989277293776988\Integers.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-11379989277293776988\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\reverse\Test1623Control.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Test1623
+Semantic processing of module Test1623Control
+Semantic processing of module Test1623AgainstTest1623Control
+Linting of module Test1623
+Linting of module Test1623Control
+Linting of module Test1623AgainstTest1623Control

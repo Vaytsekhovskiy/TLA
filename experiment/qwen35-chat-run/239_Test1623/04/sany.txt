@@ -1,0 +1,29 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\qwen35-chat-run\239_Test1623\04\Test1623LLM.tla
+***Parse Error***
+
+  Precedence conflict between ops \land in block line 9, col 17 to line 9, col 18 of module Test1623LLM and \lor.
+
+Residual stack trace follows:
+ExtendableExpr starting at line 9, column 20.
+ExtendableExpr starting at line 9, column 9.
+Expression starting at line 9, column 9.
+Definition starting at line 9, column 1.
+Module body starting at line 3, column 1.
+
+
+Fatal errors while parsing TLA+ spec in file Test1623LLM.tla
+
+In module Test1623LLM
+
+Could not parse module Test1623LLM from file Test1623LLM.tla
+*** Errors: 1
+
+In module Test1623LLM
+
+Could not parse module Test1623LLM from file Test1623LLM.tla
+
+
+

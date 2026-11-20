@@ -1,0 +1,24 @@
+---- MODULE ConfigParamsLLM ----
+
+CONSTANTS MyInt, MyStr, MyModelValue1, MyModelValue2, MySet
+
+VARIABLES x, y, z, w
+
+Init == x = MyInt
+  /\ y = MyStr
+  /\ z = MyModelValue1
+  /\ w = MySet
+
+Next == x' = x
+  /\ y' = y
+  /\ z' = z
+  /\ w' = w
+
+Inv == x = 42
+  /\ y = "hello"
+  /\ z = MyModelValue1
+  /\ z \in MyModelValue2
+  /\ w = {1, 2, 3}
+
+---- END MODULE ConfigParamsLLM ----
+```

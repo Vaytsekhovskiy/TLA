@@ -1,0 +1,15 @@
+{
+  "model": "qwen3.5:9b",
+  "prompt": "Write a complete TLA+ module named Test1623LLM for the task below. Return only the module text. It must work with the supplied TLC configuration.\n\nTask description\nThe module `Test1623` specifies a simple integer countdown system. It declares a single integer constant `N`, assumed to be a natural number, and a single integer variable `x`. The initial state sets `x` equal to `N`. On each step, either `x` is greater than zero and decrements by one, or `x` equals zero and remains unchanged, making zero an absorbing state. The constant `N` is fixed to 4 in the model-checking configuration. The invariant `Inv` asserts that `x` is always non-negative. This is a minimal test module, likely used to verify that the model checker correctly maintains the non-negativity invariant as `x` counts down from 4 to 0 and stays there.\n\nTLC configuration\nINIT\nInit\nNEXT\nNext\nCONSTANTS\nN = 4\n\nRevise your previous attempt using the checker output. Return the complete revised module.\n\nPrevious attempt\nMODULE Test1623LLM\n\nCONSTANTS N\n\nVARIABLE x\n\n-- ASSUME N >= 0\n\n(* Invariant: x is always non-negative *)\nINV == x >= 0\n\n(* Initial state: x equals N *)\nInit == x = N\n\n(* Next state relation: if x > 0 then decrement, else stay at 0 *)\nNext == [][x]_\n    IF x > 0 THEN\n        x' = x - 1\n    ELSE\n        x' = x\n    FI\n\n-- The following specifications are required by the TLC configuration\nSPECIFICATION\n    INV\n    Init\n    Next\n\nEND\n\nLatest SANY output\n\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file C:\\projects\\tla\\experiment\\qwen35-run\\239_Test1623\\08\\Test1623LLM.tla\n***Parse Error***\nWas expecting \"---- MODULE (beginning of module)\"\nEncountered \"<EOF>\" at line 29, column 3 and token \"\" \n\nResidual stack trace follows:\nBegin module starting at line 29, column 3.\nModule definition starting at line 29, column 3.\n\n\nFatal errors while parsing TLA+ spec in file Test1623LLM.tla\n\nIn module Test1623LLM\n\nCould not parse module Test1623LLM from file Test1623LLM.tla\n*** Errors: 1\n\nIn module Test1623LLM\n\nCould not parse module Test1623LLM from file Test1623LLM.tla\n\n\n\n",
+  "stream": false,
+  "think": false,
+  "keep_alive": "10m",
+  "options": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "seed": 1738,
+    "num_ctx": 8192,
+    "num_predict": 5000
+  }
+}

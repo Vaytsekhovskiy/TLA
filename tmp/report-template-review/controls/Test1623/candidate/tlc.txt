@@ -1,0 +1,20 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed -4802217738917032687 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 30524] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Test1623\Test1623Control.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-1113092469830584740\Integers.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-1113092469830584740\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Test1623Control
+Linting of module Test1623Control
+Starting... (2026-11-20 13:06:46)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-20 13:06:46.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 2.2E-19
+5 states generated, 4 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
+Finished in 00s at (2026-11-20 13:06:46)

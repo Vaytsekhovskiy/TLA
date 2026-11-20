@@ -1,0 +1,6 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\repaired\352_test10\01\test10LLM.tla
+Semantic processing of module test10LLM
+Linting of module test10LLM

@@ -1,0 +1,26 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\qwen35-run\239_Test1623\06\Test1623LLM.tla
+***Parse Error***
+Was expecting "---- MODULE (beginning of module)"
+Encountered "<EOF>" at line 29, column 3 and token "" 
+
+Residual stack trace follows:
+Begin module starting at line 29, column 3.
+Module definition starting at line 29, column 3.
+
+
+Fatal errors while parsing TLA+ spec in file Test1623LLM.tla
+
+In module Test1623LLM
+
+Could not parse module Test1623LLM from file Test1623LLM.tla
+*** Errors: 1
+
+In module Test1623LLM
+
+Could not parse module Test1623LLM from file Test1623LLM.tla
+
+
+

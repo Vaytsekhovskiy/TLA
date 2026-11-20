@@ -1,0 +1,21 @@
+{
+  "model": "qwen2.5-coder:7b-instruct-q4_K_M",
+  "stream": false,
+  "think": false,
+  "keep_alive": "10m",
+  "options": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "num_ctx": 8192,
+    "num_predict": 5000,
+    "presence_penalty": 0.0,
+    "seed": 1730
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a complete TLA+ module named test10LLM for the task below. Return only the module text. It must work with the supplied TLC configuration.\n\nTask description\nThis module is a regression-style test specification for TLA+ function definitions, function application, tupled arguments, records, and function override via EXCEPT. It models a trivial one-variable state machine with boolean variable x, where Init sets x to TRUE and Next leaves x unchanged, but the substantive content is the invariant Inv, which checks many function-evaluation identities using TLC's Assert and Print operators. The specification exercises operator definitions with bound domains, tuple parameters, nested tuples, record-valued functions, anonymous function constructors, EXCEPT updates including use of @, and record field access; it does not state temporal liveness properties or fault assumptions.\n\nTLC configuration\n  INIT\n    Init\n  \n  NEXT\n    Next\n  \n  INVARIANT Inv\n"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Task description shown to the model:
+
+This specification models a simple integer countdown system with a single state
+variable x initialized to the constant N. The assumption requires N to be a
+natural number, and the transition relation decrements x by 1 while x is
+positive, otherwise it stutters when x = 0. The main safety property is the
+invariant that x remains nonnegative throughout execution.
+
+Generate one complete TLA+ module. The module name must be Test1623LLM.
+The provided TLC configuration is the only additional artifact available.
+Return only the module text. Do not assume access to the Gold specification.

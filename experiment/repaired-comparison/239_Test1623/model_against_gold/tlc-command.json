@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:/Program Files/Java/jdk-22.0.2/bin\\java.exe",
+    "-Dfile.encoding=UTF-8",
+    "-XX:+UseParallelGC",
+    "-cp",
+    "C:\\projects\\tla\\dataset_release\\tla2tools.jar",
+    "tlc2.TLC",
+    "-workers",
+    "1",
+    "-fp",
+    "0",
+    "-noGenerateSpecTE",
+    "-metadir",
+    "C:\\projects\\tla\\experiment\\repaired-comparison\\239_Test1623\\model_against_gold\\states",
+    "-config",
+    "C:\\projects\\tla\\experiment\\repaired-comparison\\239_Test1623\\model_against_gold\\Test1623LLMAgainstTest1623.cfg",
+    "Test1623LLMAgainstTest1623.tla"
+  ],
+  "cwd": "C:\\projects\\tla\\experiment\\repaired-comparison\\239_Test1623\\model_against_gold",
+  "exit": 0
+}

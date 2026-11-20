@@ -1,0 +1,12 @@
+test_behavior_comparison_detects_a_changed_transition (test_experiment.CheckerTests.test_behavior_comparison_detects_a_changed_transition) ... ok
+test_invalid_sany_output_cannot_pass (test_experiment.CheckerTests.test_invalid_sany_output_cannot_pass) ... ok
+test_resume_verifies_saved_response_without_requesting_another (test_experiment.CheckerTests.test_resume_verifies_saved_response_without_requesting_another) ... ok
+test_stuttering_candidate_requires_reverse_comparison (test_experiment.CheckerTests.test_stuttering_candidate_requires_reverse_comparison) ... ok
+test_extraction_preserves_module_text (test_experiment.ExtractionTests.test_extraction_preserves_module_text) ... ok
+test_invalid_text_is_preserved_for_sany (test_experiment.ExtractionTests.test_invalid_text_is_preserved_for_sany) ... ok
+test_missing_terminator_remains_an_error (test_experiment.ExtractionTests.test_missing_terminator_remains_an_error) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 17.898s
+
+OK

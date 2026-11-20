@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:/Program Files/Java/jdk-22.0.2/bin\\java.exe",
+    "-Dfile.encoding=UTF-8",
+    "-XX:+UseParallelGC",
+    "-cp",
+    "C:\\projects\\tla\\dataset_release\\tla2tools.jar",
+    "tlc2.TLC",
+    "-workers",
+    "1",
+    "-fp",
+    "0",
+    "-noGenerateSpecTE",
+    "-metadir",
+    "C:\\projects\\tla\\experiment\\repaired-comparison\\67_Bug2750\\model_against_gold\\states",
+    "-config",
+    "C:\\projects\\tla\\experiment\\repaired-comparison\\67_Bug2750\\model_against_gold\\Bug2750LLMAgainstBug2750.cfg",
+    "Bug2750LLMAgainstBug2750.tla"
+  ],
+  "cwd": "C:\\projects\\tla\\experiment\\repaired-comparison\\67_Bug2750\\model_against_gold",
+  "exit": 0
+}

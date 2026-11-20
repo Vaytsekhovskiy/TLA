@@ -1,0 +1,25 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\coder-run\352_test10\02\test10LLM.tla
+***Parse Error***
+Was expecting "==== or more Module body"
+Encountered "->" at line 15, column 16 and token "FALSE" 
+
+Residual stack trace follows:
+Module definition starting at line 1, column 1.
+
+
+Fatal errors while parsing TLA+ spec in file test10LLM.tla
+
+In module test10LLM
+
+Could not parse module test10LLM from file test10LLM.tla
+*** Errors: 1
+
+In module test10LLM
+
+Could not parse module test10LLM from file test10LLM.tla
+
+
+

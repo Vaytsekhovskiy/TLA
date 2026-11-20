@@ -1,0 +1,33 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed -5782397916537803133 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 30552] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\experiment\repaired-comparison\67_Bug2750\gold_against_model\Bug2750AgainstBug2750LLM.tla
+Parsing file C:\projects\tla\experiment\repaired-comparison\67_Bug2750\gold_against_model\Bug2750.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{ab166662-f043-4adb-9542-a519f3cf3e6e}\Temp\tlc-2092501944973028320\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{ab166662-f043-4adb-9542-a519f3cf3e6e}\Temp\tlc-2092501944973028320\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\projects\tla\experiment\repaired-comparison\67_Bug2750\gold_against_model\Bug2750LLM.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750
+Semantic processing of module Bug2750LLM
+Semantic processing of module Bug2750AgainstBug2750LLM
+Linting of module Bug2750
+Linting of module Bug2750LLM
+Linting of module Bug2750AgainstBug2750LLM
+Starting... (2026-11-18 09:28:19)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-18 09:28:19.
+Error: Action property line 9, col 17 to line 9, col 29 of module Bug2750LLM is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ buffer = <<>>
+/\ waitC = {}
+/\ waitP = {}
+
+State 2: <p(p1) line 46, col 12 to line 60, col 39 of module Bug2750>
+/\ buffer = <<p1>>
+/\ waitC = {}
+/\ waitP = {}
+
+2 states generated, 2 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 2.
+Finished in 00s at (2026-11-18 09:28:19)

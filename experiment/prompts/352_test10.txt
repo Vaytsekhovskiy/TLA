@@ -1,0 +1,12 @@
+Task description shown to the model:
+
+This regression-style specification tests TLA+ function definitions and
+application, tupled arguments, records, and EXCEPT updates. It has a Boolean
+state variable with a fixed initial state and stuttering next relation. Its
+invariant evaluates arithmetic functions with ordinary and tuple arguments,
+record-valued functions, and function application identities; failed checks
+must be reported with TLC Assert.
+
+Generate one complete TLA+ module. The module name must be test10LLM.
+The provided TLC configuration is the only additional artifact available.
+Return only the module text. Do not assume access to the Gold specification.

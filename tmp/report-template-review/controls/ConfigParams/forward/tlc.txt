@@ -1,0 +1,35 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed -4640870598936799920 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 2080] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\tmp\report-template-review\controls\ConfigParams\forward\ConfigParamsControlAgainstConfigParams.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\ConfigParams\forward\ConfigParamsControl.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{f09d5841-b558-4398-947b-3d2991320987}\Temp\tlc-7786847286924614032\Integers.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{f09d5841-b558-4398-947b-3d2991320987}\Temp\tlc-7786847286924614032\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\projects\tla\tmp\report-template-review\controls\ConfigParams\forward\ConfigParams.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module ConfigParamsControl
+Semantic processing of module ConfigParams
+Semantic processing of module ConfigParamsControlAgainstConfigParams
+Linting of module ConfigParamsControl
+Linting of module ConfigParams
+Linting of module ConfigParamsControlAgainstConfigParams
+Starting... (2026-11-20 13:06:20)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-20 13:06:20.
+Error: Action property line 5, col 26 to line 5, col 53 of module ConfigParamsControlAgainstConfigParams is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ w = {1, 2, 3}
+/\ x = 42
+/\ y = "hello"
+/\ z = Model1
+
+State 2: <Next line 35, col 8 to line 37, col 31 of module ConfigParamsControl>
+/\ w = {1, 2, 3}
+/\ x = 43
+/\ y = "hello"
+/\ z = Model1
+
+3 states generated, 2 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 2.
+Finished in 00s at (2026-11-20 13:06:20)

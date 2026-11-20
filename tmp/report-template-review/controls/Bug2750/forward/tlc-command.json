@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:/Program Files/Java/jdk-22.0.2/bin/java.exe",
+    "-Dfile.encoding=UTF-8",
+    "-XX:+UseParallelGC",
+    "-cp",
+    "C:\\projects\\tla\\dataset_release\\tla2tools.jar",
+    "tlc2.TLC",
+    "-workers",
+    "1",
+    "-fp",
+    "0",
+    "-noGenerateSpecTE",
+    "-metadir",
+    "C:\\projects\\tla\\tmp\\report-template-review\\controls\\Bug2750\\forward\\states",
+    "-config",
+    "C:\\projects\\tla\\tmp\\report-template-review\\controls\\Bug2750\\forward\\Bug2750ControlAgainstBug2750.cfg",
+    "Bug2750ControlAgainstBug2750.tla"
+  ],
+  "cwd": "C:\\projects\\tla\\tmp\\report-template-review\\controls\\Bug2750\\forward",
+  "exit": 0
+}

@@ -1,0 +1,20 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed -9149684900028714037 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 12968] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\experiment\coder-comparison\67_Bug2750\gold\Bug2750.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{a8d7ed0e-a727-436d-8db8-dc1590a3a205}\Temp\tlc-17128942561354335849\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{a8d7ed0e-a727-436d-8db8-dc1590a3a205}\Temp\tlc-17128942561354335849\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750
+Linting of module Bug2750
+Starting... (2026-11-18 09:21:19)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-18 09:21:19.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.2E-16
+97 states generated, 36 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 7.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 4 and the 95th percentile is 4).
+Finished in 00s at (2026-11-18 09:21:19)

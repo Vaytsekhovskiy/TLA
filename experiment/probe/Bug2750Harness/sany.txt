@@ -1,0 +1,16 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\probe\Bug2750Harness\Bug2750LLMAgainstBug2750.tla
+Parsing file C:\projects\tla\experiment\probe\Bug2750Harness\Bug2750LLM.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{ea0e6f41-3648-4c45-be39-bf689fbee6c4}\Temp\tlc-9616036531959835298\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{ea0e6f41-3648-4c45-be39-bf689fbee6c4}\Temp\tlc-9616036531959835298\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\projects\tla\experiment\probe\Bug2750Harness\Bug2750.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750LLM
+Semantic processing of module Bug2750
+Semantic processing of module Bug2750LLMAgainstBug2750
+Linting of module Bug2750LLM
+Linting of module Bug2750
+Linting of module Bug2750LLMAgainstBug2750

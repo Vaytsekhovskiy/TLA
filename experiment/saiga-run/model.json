@@ -1,0 +1,24 @@
+{
+  "ollama": "0.40.16",
+  "name": "saiga:latest",
+  "model": "saiga:latest",
+  "modified_at": "2026-01-06T21:57:54.7176443+03:00",
+  "size": 4920734832,
+  "digest": "9e60266e32fb694228835d53aa486a4d427853fc9030483c7065f1c6b0ba8e05",
+  "details": {
+    "parent_model": "C:\\Users\\Dizoo\\.ollama\\models\\blobs\\sha256-24286f1721cd6b594530a7a536cb94d5d10568b86eec96f7139bb62cf39ea58b",
+    "format": "gguf",
+    "family": "llama",
+    "families": [
+      "llama"
+    ],
+    "parameter_size": "8.0B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 8192,
+    "embedding_length": 4096,
+    "runner": "ggml"
+  },
+  "capabilities": [
+    "completion"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:/Program Files/Java/jdk-22.0.2/bin/java.exe",
+    "-Dfile.encoding=UTF-8",
+    "-XX:+UseParallelGC",
+    "-cp",
+    "C:\\projects\\tla\\dataset_release\\tla2tools.jar",
+    "tlc2.TLC",
+    "-workers",
+    "1",
+    "-fp",
+    "0",
+    "-noGenerateSpecTE",
+    "-metadir",
+    "C:\\projects\\tla\\tmp\\report-template-review\\controls\\ConfigParams\\candidate\\states",
+    "-config",
+    "C:\\projects\\tla\\experiment\\coder-comparison\\92_ConfigParams\\gold\\ConfigParams.cfg",
+    "ConfigParamsControl.tla"
+  ],
+  "cwd": "C:\\projects\\tla\\tmp\\report-template-review\\controls\\ConfigParams",
+  "exit": 0
+}

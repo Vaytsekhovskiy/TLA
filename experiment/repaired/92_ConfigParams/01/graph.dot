@@ -1,0 +1,10 @@
+strict digraph DiskGraph {
+node [shape=box,style=rounded]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+4579811493160280607 [label="/\\ w = {1, 2, 3}\n/\\ x = 42\n/\\ y = \"hello\"\n/\\ z = Model1",style = filled]
+4579811493160280607 -> 4579811493160280607 [label="",color="black",fontcolor="black"];
+{rank = same; 4579811493160280607;}
+}
+}

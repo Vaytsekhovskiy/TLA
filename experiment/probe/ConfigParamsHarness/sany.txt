@@ -1,0 +1,12 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\probe\ConfigParamsHarness\ConfigParamsLLMAgainstConfigParams.tla
+Parsing file C:\projects\tla\experiment\probe\ConfigParamsHarness\ConfigParamsLLM.tla
+Parsing file C:\projects\tla\experiment\probe\ConfigParamsHarness\ConfigParams.tla
+Semantic processing of module ConfigParamsLLM
+Semantic processing of module ConfigParams
+Semantic processing of module ConfigParamsLLMAgainstConfigParams
+Linting of module ConfigParamsLLM
+Linting of module ConfigParams
+Linting of module ConfigParamsLLMAgainstConfigParams

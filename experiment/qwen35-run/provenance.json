@@ -1,0 +1,26 @@
+{
+  "checkout_commit": "ae4b96b1ed2fa6c455488225d727449c267354a9",
+  "tla2tools_sha256": "d5d07d5dab38ddb840c91ec48fa02f28b37a608d5af9a73570018591dbc8ef7f",
+  "inputs": {
+    "ConfigParams": {
+      "dataset_release\\descriptions\\declarative_claude\\92.txt": "f12e0f3ea9aeeda05093b4174de8eb15cf9e5013b35edeea8570fd53c045aa23",
+      "dataset_release\\specs\\gold\\92_ConfigParams.tla": "1ec5d9c47c81b9541a17f6b5eab4b01d99e7c795d56e4727de5d310003845426",
+      "dataset_release\\specs\\gold\\92_ConfigParams.cfg": "e4732c4fafa546115c74954a6fd568f75693dc054f7e85df7571da5d7796deae"
+    },
+    "Test1623": {
+      "dataset_release\\descriptions\\declarative_claude\\239.txt": "9aca1211b2ae1673fe2d1130e4d701af1bd639d52211ec70f55c2f0fef6cbfc5",
+      "dataset_release\\specs\\gold\\239_Test1623.tla": "2c253e6411b14e729fd8df76ea68b88685f47eb378d156a518b1f282e07c65e8",
+      "dataset_release\\specs\\gold\\239_Test1623.cfg": "d696b5f77e2e3aecbe53dec74e57df3604804d25bf4086375baf0b8a07b9fd54"
+    },
+    "Bug2750": {
+      "dataset_release\\descriptions\\declarative_claude\\67.txt": "cb17a2d2dcbab02fa7b5d843f82ad622f7b17fcbddec8740d0766e70898e5dfd",
+      "dataset_release\\specs\\gold\\67_Bug2750.tla": "c56b46271ee99c34ab62c8da34a62f67325076084c6cb97113fb6064f1221598",
+      "dataset_release\\specs\\gold\\67_Bug2750.cfg": "f512affc50fbbcfc8a5620bb3656ee5ceaccacce8adc917cc3f868d7c4dfd9f5"
+    },
+    "test10": {
+      "dataset_release\\descriptions\\declarative_gpt\\352.txt": "7cfaa6dc15f676f31bf61d7e8bf3621dfbb7f19930a051642210df80b12b9585",
+      "dataset_release\\specs\\gold\\352_test10.tla": "5ba6ebed6220c411853a5e9927b7735f6ecd995d971891c17fe3f47aa9ad408a",
+      "dataset_release\\specs\\gold\\352_test10.cfg": "a15cc5c0900573708ecbcc149c9183d9313dd61fbcfbecf4bddad9716180ac98"
+    }
+  }
+}

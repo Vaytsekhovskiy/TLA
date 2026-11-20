@@ -1,0 +1,43 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed 4664045111376662424 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 23112] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\reverse\Bug2750AgainstBug2750Control.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\reverse\Bug2750.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-11570242674450351946\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-11570242674450351946\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\reverse\Bug2750Control.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750
+Semantic processing of module Bug2750Control
+Semantic processing of module Bug2750AgainstBug2750Control
+Linting of module Bug2750
+Linting of module Bug2750Control
+Linting of module Bug2750AgainstBug2750Control
+Starting... (2026-11-20 13:06:50)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-20 13:06:50.
+Error: Action property line 79, col 17 to line 79, col 29 of module Bug2750Control is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ buffer = <<>>
+/\ waitC = {}
+/\ waitP = {}
+
+State 2: <c(c1) line 62, col 12 to line 76, col 39 of module Bug2750>
+/\ buffer = <<>>
+/\ waitC = {c1}
+/\ waitP = {}
+
+State 3: <c(c2) line 62, col 12 to line 76, col 39 of module Bug2750>
+/\ buffer = <<>>
+/\ waitC = {c1, c2}
+/\ waitP = {}
+
+State 4: <p(p1) line 46, col 12 to line 60, col 39 of module Bug2750>
+/\ buffer = <<p1>>
+/\ waitC = {c1}
+/\ waitP = {}
+
+33 states generated, 14 distinct states found, 3 states left on queue.
+The depth of the complete state graph search is 4.
+Finished in 00s at (2026-11-20 13:06:50)

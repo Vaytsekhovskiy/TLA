@@ -1,0 +1,26 @@
+TLC2 Version 2026.04.22.172729 (rev: 6320a09)
+Running breadth-first search Model-Checking with fp 0 and seed 3894714252824573267 with 1 worker on 20 cores with 3577MB heap and 64MB offheap memory [pid: 20272] (Windows 11 10.0 amd64, Oracle Corporation 22.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\forward\Bug2750ControlAgainstBug2750.tla
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\forward\Bug2750Control.tla
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-7757447104452912440\Naturals.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\Dizoo\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{accf3d48-5424-4615-aed8-624597844ccb}\Temp\tlc-7757447104452912440\Sequences.tla (jar:file:/C:/projects/tla/dataset_release/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\projects\tla\tmp\report-template-review\controls\Bug2750\forward\Bug2750.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Bug2750Control
+Semantic processing of module Bug2750
+Semantic processing of module Bug2750ControlAgainstBug2750
+Linting of module Bug2750Control
+Linting of module Bug2750
+Linting of module Bug2750ControlAgainstBug2750
+Starting... (2026-11-20 13:06:49)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-20 13:06:49.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 4.8E-17
+61 states generated, 24 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 7.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 4 and the 95th percentile is 2).
+Finished in 00s at (2026-11-20 13:06:49)

@@ -1,0 +1,25 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\coder-run\92_ConfigParams\05\ConfigParamsLLM.tla
+***Parse Error***
+Was expecting "==== or more Module body"
+Encountered "END" at line 23, column 6 and token "----" 
+
+Residual stack trace follows:
+Module definition starting at line 1, column 1.
+
+
+Fatal errors while parsing TLA+ spec in file ConfigParamsLLM.tla
+
+In module ConfigParamsLLM
+
+Could not parse module ConfigParamsLLM from file ConfigParamsLLM.tla
+*** Errors: 1
+
+In module ConfigParamsLLM
+
+Could not parse module ConfigParamsLLM from file ConfigParamsLLM.tla
+
+
+

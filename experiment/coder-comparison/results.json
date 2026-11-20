@@ -1,0 +1,54 @@
+{
+  "ConfigParams": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    }
+  },
+  "Test1623": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 6,
+        "distinct": 5,
+        "depth": 5
+      },
+      "tlc_exit": 0
+    }
+  },
+  "Bug2750": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 97,
+        "distinct": 36,
+        "depth": 7
+      },
+      "tlc_exit": 0
+    }
+  },
+  "test10": {
+    "gold": {
+      "sany": true,
+      "sany_exit": 0,
+      "tlc": true,
+      "metrics": {
+        "total": 2,
+        "distinct": 1,
+        "depth": 1
+      },
+      "tlc_exit": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "origin": "manual repairs of saved model candidates",
+  "tasks": {
+    "ConfigParams": {
+      "source_module": "C:\\projects\\tla\\experiment\\coder-run\\92_ConfigParams\\10\\ConfigParamsLLM.tla",
+      "source_sha256": "c42e9609ddaea0e704567fffc5c3061c795e5a898882286ad8b2bf2439e026c9",
+      "source_iteration": 10,
+      "changes": [
+        "Replace invalid END MODULE footer with the standard terminator.",
+        "Replace membership in a model value with inequality required by the description."
+      ],
+      "repaired_sha256": "9f59a84023fccaa3c30f9990bb870056794849e5fd64850c5eed0e7419971158"
+    },
+    "Test1623": {
+      "source_module": "C:\\projects\\tla\\experiment\\coder-run\\239_Test1623\\10\\Test1623LLM.tla",
+      "source_sha256": "fd3dab1db5451901836f1b75dd74fb071777a6bfbc6289bbfb84e214168628d1",
+      "source_iteration": 10,
+      "changes": [
+        "Import Naturals to resolve arithmetic operators.",
+        "Add the assumption that N is a natural number."
+      ],
+      "repaired_sha256": "9f95511cf59a577705c0f17bdce673b7fdadb253d0786af1943906b2d1b5da84"
+    },
+    "Bug2750": {
+      "source_module": "C:\\projects\\tla\\experiment\\coder-run\\67_Bug2750\\10\\Bug2750LLM.tla",
+      "source_sha256": "ae47f1d1748eb8d2f9479b043ef0aa7ae306b379cebac2016d13ad35f09b4f3d",
+      "source_iteration": 10,
+      "changes": [
+        "Declare constant names and leave their values in CFG.",
+        "Use legal Init, vars and Inv syntax.",
+        "Retain the stuttering Next relation.",
+        "Remove malformed p and c definitions that are not called by Next."
+      ],
+      "repaired_sha256": "9a57e874c58475cf66c234172b21693b90a7b6cf059311eae90e365ee1ee566a"
+    },
+    "test10": {
+      "source_module": "C:\\projects\\tla\\experiment\\coder-run\\352_test10\\01\\test10LLM.tla",
+      "source_sha256": "6582772accdf097c6cb1209a0a464c1b77e0aceb2347b79d0b9aea79d87e77f1",
+      "source_iteration": 1,
+      "changes": [
+        "Retain the Boolean initial state.",
+        "Express state preservation with UNCHANGED x.",
+        "Replace repeated Boolean implications with the intended x = TRUE invariant and terminate the module.",
+        "No function-regression tests were added."
+      ],
+      "repaired_sha256": "91926a2bff332d0a926376fcb09bf7d9b25d3c13b99a702dcbe9886028ee1a77"
+    }
+  }
+}

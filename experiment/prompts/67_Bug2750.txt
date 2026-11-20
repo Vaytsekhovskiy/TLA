@@ -1,0 +1,14 @@
+Task description shown to the model:
+
+This specification models a bounded buffer shared by nonempty producer and
+consumer sets. The state consists of a sequence-valued buffer and sets of
+waiting producers and consumers. A producer waits when the buffer is full or
+appends its identity otherwise; a consumer waits when the buffer is empty or
+removes the oldest item otherwise. Successful operations may remove one
+identity from the opposite waiting set. Producers and consumers are disjoint,
+the capacity is at least one, and the invariant states that not all producers
+and all consumers are simultaneously waiting.
+
+Generate one complete TLA+ module. The module name must be Bug2750LLM.
+The provided TLC configuration is the only additional artifact available.
+Return only the module text. Do not assume access to the Gold specification.

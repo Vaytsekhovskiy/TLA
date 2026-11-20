@@ -1,0 +1,146 @@
+strict digraph DiskGraph {
+node [shape=box,style=rounded]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+1974824548554449801 [label="/\\ buffer = <<>>\n/\\ waitC = {}\n/\\ waitP = {}",style = filled]
+1974824548554449801 -> -80642726679522397 [label="",color="black",fontcolor="black"];
+-80642726679522397 [label="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {}"];
+1974824548554449801 -> -5979740062785519031 [label="",color="black",fontcolor="black"];
+-5979740062785519031 [label="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {}"];
+1974824548554449801 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+-4711539423341788823 [label="/\\ buffer = <<>>\n/\\ waitC = {c1}\n/\\ waitP = {}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c1}\n/\\ waitP = {}"];
+1974824548554449801 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+-2757630331982984306 [label="/\\ buffer = <<>>\n/\\ waitC = {c2}\n/\\ waitP = {}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c2}\n/\\ waitP = {}"];
+-80642726679522397 -> -6767626467576573847 [label="",color="black",fontcolor="black"];
+-6767626467576573847 [label="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {p1}"];
+-80642726679522397 -> -3939672906191456455 [label="",color="black",fontcolor="black"];
+-3939672906191456455 [label="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {p2}"];
+-80642726679522397 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-80642726679522397 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-5979740062785519031 -> 2392021516961056405 [label="",color="black",fontcolor="black"];
+2392021516961056405 [label="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {p1}"];
+-5979740062785519031 -> 5365437718860210629 [label="",color="black",fontcolor="black"];
+5365437718860210629 [label="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {p2}"];
+-5979740062785519031 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-5979740062785519031 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-4711539423341788823 -> -80642726679522397 [label="",color="black",fontcolor="black"];
+-4711539423341788823 -> -5979740062785519031 [label="",color="black",fontcolor="black"];
+-4711539423341788823 -> -3594986340704854313 [label="",color="black",fontcolor="black"];
+-3594986340704854313 [label="/\\ buffer = <<>>\n/\\ waitC = {c1, c2}\n/\\ waitP = {}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c1, c2}\n/\\ waitP = {}"];
+-2757630331982984306 -> -80642726679522397 [label="",color="black",fontcolor="black"];
+-2757630331982984306 -> -5979740062785519031 [label="",color="black",fontcolor="black"];
+-2757630331982984306 -> -3594986340704854313 [label="",color="black",fontcolor="black"];
+-6767626467576573847 -> -8671506866502706184 [label="",color="black",fontcolor="black"];
+-8671506866502706184 [label="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {p1, p2}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {}\n/\\ waitP = {p1, p2}"];
+-6767626467576573847 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-6767626467576573847 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-3939672906191456455 -> -8671506866502706184 [label="",color="black",fontcolor="black"];
+-3939672906191456455 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-3939672906191456455 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+2392021516961056405 -> -1162546079090673579 [label="",color="black",fontcolor="black"];
+-1162546079090673579 [label="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {p1, p2}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {}\n/\\ waitP = {p1, p2}"];
+2392021516961056405 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+2392021516961056405 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+5365437718860210629 -> -1162546079090673579 [label="",color="black",fontcolor="black"];
+5365437718860210629 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+5365437718860210629 -> 1974824548554449801 [label="",color="black",fontcolor="black"];
+-3594986340704854313 -> -5431473800779797864 [label="",color="black",fontcolor="black"];
+-5431473800779797864 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {}"];
+-3594986340704854313 -> -3190706519551975297 [label="",color="black",fontcolor="black"];
+-3190706519551975297 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {}"];
+-3594986340704854313 -> 4015278107093302372 [label="",color="black",fontcolor="black"];
+4015278107093302372 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {}"];
+-3594986340704854313 -> 5809344605447779971 [label="",color="black",fontcolor="black"];
+5809344605447779971 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {}"];
+-8671506866502706184 -> -6596063896743176657 [label="",color="black",fontcolor="black"];
+-6596063896743176657 [label="/\\ buffer = <<>>\n/\\ waitC = {}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {}\n/\\ waitP = {p2}"];
+-8671506866502706184 -> -3516777918423158401 [label="",color="black",fontcolor="black"];
+-3516777918423158401 [label="/\\ buffer = <<>>\n/\\ waitC = {}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {}\n/\\ waitP = {p1}"];
+-8671506866502706184 -> -6596063896743176657 [label="",color="black",fontcolor="black"];
+-8671506866502706184 -> -3516777918423158401 [label="",color="black",fontcolor="black"];
+-1162546079090673579 -> -6596063896743176657 [label="",color="black",fontcolor="black"];
+-1162546079090673579 -> -3516777918423158401 [label="",color="black",fontcolor="black"];
+-1162546079090673579 -> -6596063896743176657 [label="",color="black",fontcolor="black"];
+-1162546079090673579 -> -3516777918423158401 [label="",color="black",fontcolor="black"];
+-5431473800779797864 -> 4710447715765931557 [label="",color="black",fontcolor="black"];
+4710447715765931557 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {p1}"];
+-5431473800779797864 -> 3033500858687711605 [label="",color="black",fontcolor="black"];
+3033500858687711605 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {p2}"];
+-5431473800779797864 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+-3190706519551975297 -> 3900698675025064396 [label="",color="black",fontcolor="black"];
+3900698675025064396 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {p1}"];
+-3190706519551975297 -> 6730039273143113372 [label="",color="black",fontcolor="black"];
+6730039273143113372 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {p2}"];
+-3190706519551975297 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+4015278107093302372 -> 2966622900875914632 [label="",color="black",fontcolor="black"];
+2966622900875914632 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {p1}"];
+4015278107093302372 -> 4786332477622078168 [label="",color="black",fontcolor="black"];
+4786332477622078168 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {p2}"];
+4015278107093302372 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+5809344605447779971 -> 6797972762251792993 [label="",color="black",fontcolor="black"];
+6797972762251792993 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {p1}"];
+5809344605447779971 -> 3823758381872035121 [label="",color="black",fontcolor="black"];
+3823758381872035121 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {p2}"];
+5809344605447779971 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+-6596063896743176657 -> -3939672906191456455 [label="",color="black",fontcolor="black"];
+-6596063896743176657 -> -2283601018501805641 [label="",color="black",fontcolor="black"];
+-2283601018501805641 [label="/\\ buffer = <<>>\n/\\ waitC = {c1}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c1}\n/\\ waitP = {p2}"];
+-6596063896743176657 -> -7551468933328849314 [label="",color="black",fontcolor="black"];
+-7551468933328849314 [label="/\\ buffer = <<>>\n/\\ waitC = {c2}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c2}\n/\\ waitP = {p2}"];
+-3516777918423158401 -> 2392021516961056405 [label="",color="black",fontcolor="black"];
+-3516777918423158401 -> -8428219306552987929 [label="",color="black",fontcolor="black"];
+-8428219306552987929 [label="/\\ buffer = <<>>\n/\\ waitC = {c1}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c1}\n/\\ waitP = {p1}"];
+-3516777918423158401 -> -255512435134164722 [label="",color="black",fontcolor="black"];
+-255512435134164722 [label="/\\ buffer = <<>>\n/\\ waitC = {c2}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c2}\n/\\ waitP = {p1}"];
+4710447715765931557 -> -8374555576995407119 [label="",color="black",fontcolor="black"];
+-8374555576995407119 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {p1, p2}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c2}\n/\\ waitP = {p1, p2}"];
+4710447715765931557 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+3033500858687711605 -> -8374555576995407119 [label="",color="black",fontcolor="black"];
+3033500858687711605 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+3900698675025064396 -> -3368267556747628304 [label="",color="black",fontcolor="black"];
+-3368267556747628304 [label="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {p1, p2}",tooltip="/\\ buffer = <<p1>>\n/\\ waitC = {c1}\n/\\ waitP = {p1, p2}"];
+3900698675025064396 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+6730039273143113372 -> -3368267556747628304 [label="",color="black",fontcolor="black"];
+6730039273143113372 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+2966622900875914632 -> 8721797987925748408 [label="",color="black",fontcolor="black"];
+8721797987925748408 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {p1, p2}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c2}\n/\\ waitP = {p1, p2}"];
+2966622900875914632 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+4786332477622078168 -> 8721797987925748408 [label="",color="black",fontcolor="black"];
+4786332477622078168 -> -2757630331982984306 [label="",color="black",fontcolor="black"];
+6797972762251792993 -> 2561446052859101369 [label="",color="black",fontcolor="black"];
+2561446052859101369 [label="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {p1, p2}",tooltip="/\\ buffer = <<p2>>\n/\\ waitC = {c1}\n/\\ waitP = {p1, p2}"];
+6797972762251792993 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+3823758381872035121 -> 2561446052859101369 [label="",color="black",fontcolor="black"];
+3823758381872035121 -> -4711539423341788823 [label="",color="black",fontcolor="black"];
+-2283601018501805641 -> -3939672906191456455 [label="",color="black",fontcolor="black"];
+-2283601018501805641 -> 3888375490897672105 [label="",color="black",fontcolor="black"];
+3888375490897672105 [label="/\\ buffer = <<>>\n/\\ waitC = {c1, c2}\n/\\ waitP = {p2}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c1, c2}\n/\\ waitP = {p2}"];
+-7551468933328849314 -> -3939672906191456455 [label="",color="black",fontcolor="black"];
+-7551468933328849314 -> 3888375490897672105 [label="",color="black",fontcolor="black"];
+-8428219306552987929 -> 2392021516961056405 [label="",color="black",fontcolor="black"];
+-8428219306552987929 -> 6823445057503318265 [label="",color="black",fontcolor="black"];
+6823445057503318265 [label="/\\ buffer = <<>>\n/\\ waitC = {c1, c2}\n/\\ waitP = {p1}",tooltip="/\\ buffer = <<>>\n/\\ waitC = {c1, c2}\n/\\ waitP = {p1}"];
+-255512435134164722 -> 2392021516961056405 [label="",color="black",fontcolor="black"];
+-255512435134164722 -> 6823445057503318265 [label="",color="black",fontcolor="black"];
+-8374555576995407119 -> -7551468933328849314 [label="",color="black",fontcolor="black"];
+-8374555576995407119 -> -255512435134164722 [label="",color="black",fontcolor="black"];
+-3368267556747628304 -> -2283601018501805641 [label="",color="black",fontcolor="black"];
+-3368267556747628304 -> -8428219306552987929 [label="",color="black",fontcolor="black"];
+8721797987925748408 -> -7551468933328849314 [label="",color="black",fontcolor="black"];
+8721797987925748408 -> -255512435134164722 [label="",color="black",fontcolor="black"];
+2561446052859101369 -> -2283601018501805641 [label="",color="black",fontcolor="black"];
+2561446052859101369 -> -8428219306552987929 [label="",color="black",fontcolor="black"];
+3888375490897672105 -> 3033500858687711605 [label="",color="black",fontcolor="black"];
+3888375490897672105 -> 6730039273143113372 [label="",color="black",fontcolor="black"];
+6823445057503318265 -> 2966622900875914632 [label="",color="black",fontcolor="black"];
+6823445057503318265 -> 6797972762251792993 [label="",color="black",fontcolor="black"];
+{rank = same; 1974824548554449801;}
+{rank = same; -80642726679522397;-4711539423341788823;-2757630331982984306;-5979740062785519031;}
+{rank = same; -3594986340704854313;5365437718860210629;-6767626467576573847;2392021516961056405;-3939672906191456455;}
+{rank = same; -5431473800779797864;-3190706519551975297;4015278107093302372;5809344605447779971;-8671506866502706184;-1162546079090673579;}
+{rank = same; -3516777918423158401;4710447715765931557;2966622900875914632;-6596063896743176657;3033500858687711605;4786332477622078168;6730039273143113372;3823758381872035121;3900698675025064396;6797972762251792993;}
+{rank = same; -255512435134164722;-3368267556747628304;2561446052859101369;-7551468933328849314;-8374555576995407119;8721797987925748408;-2283601018501805641;-8428219306552987929;}
+{rank = same; 6823445057503318265;3888375490897672105;}
+}
+}

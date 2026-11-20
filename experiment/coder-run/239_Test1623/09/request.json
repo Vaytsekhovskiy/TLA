@@ -1,0 +1,21 @@
+{
+  "model": "qwen2.5-coder:7b-instruct-q4_K_M",
+  "stream": false,
+  "think": false,
+  "keep_alive": "10m",
+  "options": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "num_ctx": 8192,
+    "num_predict": 5000,
+    "presence_penalty": 0.0,
+    "seed": 1738
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a complete TLA+ module named Test1623LLM for the task below. Return only the module text. It must work with the supplied TLC configuration.\n\nTask description\nThe module `Test1623` specifies a simple integer countdown system. It declares a single integer constant `N`, assumed to be a natural number, and a single integer variable `x`. The initial state sets `x` equal to `N`. On each step, either `x` is greater than zero and decrements by one, or `x` equals zero and remains unchanged, making zero an absorbing state. The constant `N` is fixed to 4 in the model-checking configuration. The invariant `Inv` asserts that `x` is always non-negative. This is a minimal test module, likely used to verify that the model checker correctly maintains the non-negativity invariant as `x` counts down from 4 to 0 and stays there.\n\nTLC configuration\nINIT\nInit\nNEXT\nNext\nCONSTANTS\nN = 4\n\nRevise your previous attempt using the checker output. Return the complete revised module.\n\nPrevious attempt\n---- MODULE Test1623LLM ----\n\nCONSTANTS N\n\nVARIABLES x\n\nInit ==\n  x = N\n\nNext ==\n  IF x > 0 THEN\n    x' = x - 1\n  ELSE\n    x' = x\n\nInv ==\n  x >= 0\n\n====\n\n\nLatest SANY output\n\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file C:\\projects\\tla\\experiment\\coder-run\\239_Test1623\\08\\Test1623LLM.tla\nSemantic processing of module Test1623LLM\nSemantic errors:\n\n*** Errors: 6\n\nline 11, col 8 to line 11, col 8 of module Test1623LLM\n\nCould not find declaration or definition of symbol '>'.\n\n\nline 11, col 6 to line 11, col 10 of module Test1623LLM\n\nCouldn't resolve infix operator symbol `>'.\n\n\nline 12, col 12 to line 12, col 12 of module Test1623LLM\n\nCould not find declaration or definition of symbol '-'.\n\n\nline 12, col 10 to line 12, col 14 of module Test1623LLM\n\nCouldn't resolve infix operator symbol `-'.\n\n\nline 17, col 5 to line 17, col 6 of module Test1623LLM\n\nCould not find declaration or definition of symbol '>='.\n\n\nline 17, col 3 to line 17, col 8 of module Test1623LLM\n\nCouldn't resolve infix operator symbol `>='.\n\n\n"
+    }
+  ]
+}

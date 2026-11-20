@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "C:/Program Files/Java/jdk-22.0.2/bin/java.exe",
+    "-Dfile.encoding=UTF-8",
+    "-XX:+UseParallelGC",
+    "-cp",
+    "C:\\projects\\tla\\dataset_release\\tla2tools.jar",
+    "tlc2.TLC",
+    "-workers",
+    "1",
+    "-fp",
+    "0",
+    "-noGenerateSpecTE",
+    "-metadir",
+    "C:\\projects\\tla\\tmp\\report-template-review\\controls\\Test1623\\forward\\states",
+    "-config",
+    "C:\\projects\\tla\\tmp\\report-template-review\\controls\\Test1623\\forward\\Test1623ControlAgainstTest1623.cfg",
+    "Test1623ControlAgainstTest1623.tla"
+  ],
+  "cwd": "C:\\projects\\tla\\tmp\\report-template-review\\controls\\Test1623\\forward",
+  "exit": 13
+}

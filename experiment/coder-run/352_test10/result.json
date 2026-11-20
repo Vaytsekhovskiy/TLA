@@ -1,0 +1,87 @@
+{
+  "id": 352,
+  "level": "intermediate",
+  "description": "declarative_gpt",
+  "attempts": [
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 1,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 2,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 3,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 4,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 5,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 6,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 7,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 8,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 9,
+      "done_reason": "length"
+    },
+    {
+      "sany": false,
+      "sany_exit": 4294967295,
+      "tlc": null,
+      "metrics": null,
+      "iteration": 10,
+      "done_reason": "length"
+    }
+  ]
+}

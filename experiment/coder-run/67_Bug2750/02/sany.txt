@@ -1,0 +1,25 @@
+
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file C:\projects\tla\experiment\coder-run\67_Bug2750\02\Bug2750LLM.tla
+***Parse Error***
+Was expecting "==== or more Module body"
+Encountered "=" at line 4, column 15 and token "Producers" 
+
+Residual stack trace follows:
+Module definition starting at line 1, column 1.
+
+
+Fatal errors while parsing TLA+ spec in file Bug2750LLM.tla
+
+In module Bug2750LLM
+
+Could not parse module Bug2750LLM from file Bug2750LLM.tla
+*** Errors: 1
+
+In module Bug2750LLM
+
+Could not parse module Bug2750LLM from file Bug2750LLM.tla
+
+
+

@@ -1,0 +1,21 @@
+{
+  "model": "qwen2.5-coder:7b-instruct-q4_K_M",
+  "stream": false,
+  "think": false,
+  "keep_alive": "10m",
+  "options": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "num_ctx": 8192,
+    "num_predict": 5000,
+    "presence_penalty": 0.0,
+    "seed": 1735
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a complete TLA+ module named Bug2750LLM for the task below. Return only the module text. It must work with the supplied TLC configuration.\n\nTask description\nThe module models a classic bounded-buffer (producer-consumer) concurrency problem with multiple producers and multiple consumers sharing a fixed-capacity buffer and explicit wait sets.\n\nThree CONSTANTS parameterize the model: `Producers` and `Consumers` are disjoint, non-empty sets of process identifiers, and `BufCapacity` is a positive natural number giving the buffer's maximum size. The three VARIABLES are `buffer` (a sequence holding items up to capacity), `waitP` (the set of producers currently blocked), and `waitC` (the set of consumers currently blocked). In the model-checking configuration, two producers `{p1, p2}`, two consumers `{c1, c2}`, and a buffer capacity of 1 are used.\n\nThe `p(self)` action represents a producer step: if the producer is not already waiting and the buffer is full, it adds itself to a wait set; otherwise it appends itself to the buffer and optionally wakes one waiting consumer. The `c(self)` action mirrors this for consumers: if the buffer is empty the consumer waits; otherwise it removes the head of the buffer and optionally wakes one waiting producer. The `Next` relation is the disjunction of all producer and consumer steps. The temporal specification `Spec` is safety-only (`Init /\\ [][Next]_vars`), with no fairness constraints. The sole checked property is the invariant `Inv`, asserting that it is never the case that all producers and all consumers are simultaneously blocked — a deadlock freedom condition.\n\nTLC configuration\n\\* Add statements after this line.\nSPECIFICATION Spec\nCONSTANTS \n    Producers = {p1,p2}\n    Consumers = {c1,c2}\n    BufCapacity = 1\nINVARIANT Inv\n\nRevise your previous attempt using the checker output. Return the complete revised module.\n\nPrevious attempt\n---- MODULE Bug2750LLM ----\n\nCONSTANTS \n    Producers = {p1, p2},\n    Consumers = {c1, c2},\n    BufCapacity = 1\n\nVARIABLES \n    buffer, waitP, waitC\n\nInit == \n    buffer = << >> AND\n    waitP = {} AND\n    waitC = {}\n\nNext == \n    /\\ buffer' = buffer\n    /\\ waitP' = waitP\n    /\\ waitC' = waitC\n\np(self) ==\n    /\\ self \\notin waitP\n    /\\ card(buffer) = BufCapacity\n    /\\ waitP' = waitP \\cup {self}\n    /\\ waitC' = waitC\n\np(self) ==\n    /\\ self \\notin waitP\n    /\\ card(buffer) < BufCapacity\n    /\\ buffer' = buffer \\cup {self}\n    /\\ waitC' = waitC \\cup {self}\n\nc(self) ==\n    /\\ self \\notin waitC\n    /\\ card(buffer) = 0\n    /\\ waitC' = waitC \\cup {self}\n    /\\ waitP' = waitP\n\nc(self) ==\n    /\\ self \\notin waitC\n    /\\ card(buffer) > 0\n    /\\ buffer' = tail(buffer)\n    /\\ waitP' = waitP \\cup {self}\n    /\\ waitC' = waitC\n\nSpec == Init /\\ [][Next]_vars\n\nInv == \n    /\\ waitP \\subseteq Producers\n    /\\ waitC \\subseteq Consumers\n    /\\ NOT (waitP = Producers AND waitC = Consumers)\n\n---- END MODULE Bug2750LLM ----\n\nLatest SANY output\n\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file C:\\projects\\tla\\experiment\\coder-run\\67_Bug2750\\05\\Bug2750LLM.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"=\" at line 4, column 15 and token \"Producers\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file Bug2750LLM.tla\n\nIn module Bug2750LLM\n\nCould not parse module Bug2750LLM from file Bug2750LLM.tla\n*** Errors: 1\n\nIn module Bug2750LLM\n\nCould not parse module Bug2750LLM from file Bug2750LLM.tla\n\n\n\n"
+    }
+  ]
+}
